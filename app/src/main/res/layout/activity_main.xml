@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0C0C0C"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/m"
+        android:layout_width="96dp"
+        android:layout_height="110dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:fontFamily="@font/wendy"
+        android:gravity="center_vertical"
+        android:foregroundGravity="top"
+        android:lineHeight="80sp"
+        android:text="@string/m"
+        android:textAppearance="@style/m"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.060000002" />
+
+
+    <TextView
+        android:id="@+id/musicoo"
+        android:layout_width="101dp"
+        android:layout_height="31dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:fontFamily="@font/wendy"
+        android:text="@string/musicoo"
+        android:gravity="center"
+        android:textAppearance="@style/musicoo"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/m"
+        app:layout_constraintStart_toStartOf="@+id/m"
+        app:layout_constraintTop_toBottomOf="@+id/m" />
+
+    <TextView
+        android:id="@+id/login"
+        android:layout_width="100dp"
+        android:layout_height="42dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/poppins"
+        android:gravity="center_horizontal|top"
+        android:text="@string/login"
+        android:textAppearance="@style/login"
+        app:layout_constraintEnd_toEndOf="@+id/musicoo"
+        app:layout_constraintHorizontal_bias="0.538"
+        app:layout_constraintStart_toStartOf="@+id/musicoo"
+        app:layout_constraintTop_toBottomOf="@+id/musicoo" />
+
+    <TextView
+        android:id="@+id/please_ente"
+        android:layout_width="312dp"
+        android:layout_height="34dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="44dp"
+        android:gravity="center_horizontal|top"
+        android:text="@string/please_ente"
+        android:textAppearance="@style/please_ente"
+        app:layout_constraintEnd_toEndOf="@+id/login"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="@+id/login"
+        app:layout_constraintTop_toBottomOf="@+id/login" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="249dp"
+        android:layout_height="30dp"
+
+        android:layout_margin="20dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/please_ente"
+        app:layout_constraintStart_toStartOf="@+id/please_ente"
+        app:layout_constraintTop_toBottomOf="@+id/please_ente">
+
+        <!--        <com.google.android.material.textfield.TextInputEditText-->
+        <!--            android:id="@+id/name"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="60dp"-->
+
+        <!--            android:hint="Name" />-->
+
+    </com.google.android.material.textfield.TextInputLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">UserInterfaceSample</string>
+    <string name="m">M</string>
+    <string name="musicoo">Musicoo</string>
+    <string name="login">Login</string>
+    <string name="please_ente">Please enter your email address and password</string>
+</resources>
