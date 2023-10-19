@@ -60,13 +60,14 @@
     <TextView
         android:id="@+id/please_ente"
         android:layout_width="312dp"
-        android:layout_height="34dp"
+        android:layout_height="40dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_marginTop="44dp"
         android:gravity="center_horizontal|top"
         android:text="@string/please_ente"
         android:textAppearance="@style/please_ente"
+        android:fontFamily="@font/montserrat"
         app:layout_constraintEnd_toEndOf="@+id/login"
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="@+id/login"
@@ -85,6 +86,7 @@
         app:startIconTint="@color/white"
         app:hintEnabled="false"
         android:background="@drawable/rectangle_1"
+
         >
 
         <com.google.android.material.textfield.TextInputEditText
@@ -93,6 +95,9 @@
             android:layout_height="match_parent"
             android:hint="Email"
             android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:fontFamily="@font/montserrat"
+            style="@style/NoUnderline"
             />
 
     </com.google.android.material.textfield.TextInputLayout>
@@ -123,6 +128,9 @@
             android:hint="Password"
             android:inputType="textPassword"
             android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:fontFamily="@font/montserrat"
+            style="@style/NoUnderline"
              />
 
 
@@ -130,13 +138,14 @@
 
     <TextView
         android:id="@+id/forgot_pass"
-        android:layout_width="128dp"
-        android:layout_height="17dp"
+        android:layout_width="140dp"
+        android:layout_height="19dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_marginTop="10dp"
         android:gravity="top"
         android:text="@string/forgot_pass"
+        android:fontFamily="@font/montserrat"
         android:textAppearance="@style/forgot_pass"
         app:layout_constraintEnd_toEndOf="@+id/textInputLayout2"
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout2" />
@@ -150,6 +159,7 @@
         android:text="Login"
         android:textColor="@color/black"
         app:cornerRadius="10dp"
+        android:fontFamily="@font/montserrat"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/textInputLayout2"
         app:layout_constraintStart_toStartOf="@+id/textInputLayout2"
@@ -160,26 +170,28 @@
 
     <TextView
         android:id="@+id/don_t_have_"
-        android:layout_width="180dp"
+        android:layout_width="220dp"
         android:layout_height="17dp"
         android:layout_marginTop="10dp"
         android:gravity="top"
         android:text="@string/don_t_have_"
         android:textAppearance="@style/don_t_have_"
         app:layout_constraintStart_toStartOf="@+id/btn"
-        app:layout_constraintTop_toBottomOf="@+id/btn" />
+        app:layout_constraintTop_toBottomOf="@+id/btn"
+        android:fontFamily="@font/montserrat"/>
 
     <TextView
         android:id="@+id/sign_up"
-        android:layout_width="62dp"
-        android:layout_height="17dp"
+        android:layout_width="75dp"
+        android:layout_height="19dp"
         android:layout_marginTop="10dp"
         android:gravity="top"
         android:text="@string/sign_up"
         android:textAppearance="@style/sign_up"
         app:layout_constraintEnd_toEndOf="@+id/btn"
         app:layout_constraintStart_toEndOf="@+id/don_t_have_"
-        app:layout_constraintTop_toBottomOf="@+id/btn" />
+        app:layout_constraintTop_toBottomOf="@+id/btn"
+        android:fontFamily="@font/montserrat"/>
 
 
     <LinearLayout
@@ -202,13 +214,14 @@
             android:background="@drawable/line_drawable" />
         <TextView
             android:id="@+id/or"
-            android:layout_width="16dp"
+            android:layout_width="19dp"
             android:layout_height="23dp"
             android:text="@string/or"
             android:textAppearance="@style/or"
             android:gravity="top"
             android:layout_marginHorizontal="5dp"
             android:textColor="@color/white"
+            android:fontFamily="@font/montserrat"
             />
         <View
             android:layout_width="100dp"
@@ -235,7 +248,7 @@
 
     <TextView
         android:id="@+id/continue_wi"
-        android:layout_width="172dp"
+        android:layout_width="200dp"
         android:layout_height="18dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
@@ -246,7 +259,8 @@
         app:layout_constraintEnd_toEndOf="@+id/rectangle_1"
         app:layout_constraintHorizontal_bias="0.81"
         app:layout_constraintStart_toStartOf="@+id/rectangle_1"
-        app:layout_constraintTop_toTopOf="@+id/rectangle_1" />
+        app:layout_constraintTop_toTopOf="@+id/rectangle_1"
+        android:fontFamily="@font/montserrat"/>
 
     <ImageView
         android:id="@+id/imageView3"
