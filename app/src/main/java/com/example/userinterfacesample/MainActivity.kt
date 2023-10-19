@@ -17,7 +17,6 @@ class MainActivity : AppCompatActivity() {
 
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        binding.signUp
         binding.signUp.setOnClickListener {
             binding.signUp.setTextColor(ContextCompat.getColor(this, R.color.green))
             Handler(Looper.getMainLooper()).postDelayed(

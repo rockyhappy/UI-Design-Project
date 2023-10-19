@@ -57,7 +57,7 @@
     <TextView
         android:id="@+id/please_ente"
         android:layout_width="312dp"
-        android:layout_height="34dp"
+        android:layout_height="40dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_marginTop="10dp"
@@ -92,6 +92,7 @@
             android:textColor="@color/white"
             android:textColorHint="@color/white"
             android:layout_marginLeft="10dp"
+            android:fontFamily="@font/montserrat"
             style="@style/NoUnderline"/>
 
     </com.google.android.material.textfield.TextInputLayout>
@@ -116,6 +117,7 @@
             android:layout_marginLeft="10dp"
             android:hint="First Name"
             android:textColor="@color/white"
+            android:fontFamily="@font/montserrat"
             android:textColorHint="@color/white" />
 
     </com.google.android.material.textfield.TextInputLayout>
@@ -236,23 +238,26 @@
     </Button>
     <TextView
         android:id="@+id/don_t_have_"
-        android:layout_width="180dp"
-        android:layout_height="17dp"
+        android:layout_width="225dp"
+        android:layout_height="19dp"
         android:layout_marginTop="10dp"
         android:gravity="top"
-        android:text="@string/don_t_have_"
+        android:text="Already have an account?"
         android:textAppearance="@style/don_t_have_"
+        android:fontFamily="@font/montserrat"
         app:layout_constraintStart_toStartOf="@+id/btn"
         app:layout_constraintTop_toBottomOf="@+id/btn" />
 
     <TextView
         android:id="@+id/sign_up"
         android:layout_width="62dp"
-        android:layout_height="17dp"
+        android:layout_height="19dp"
         android:layout_marginTop="10dp"
         android:gravity="top"
         android:text="Login"
         android:textAppearance="@style/sign_up"
+        android:fontFamily="@font/montserrat"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/btn"
         app:layout_constraintStart_toEndOf="@+id/don_t_have_"
         app:layout_constraintTop_toBottomOf="@+id/btn" />
@@ -263,7 +268,7 @@
         android:layout_height="23dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="35dp"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="@+id/btn"
         app:layout_constraintStart_toStartOf="@+id/btn"
@@ -278,12 +283,13 @@
 
         <TextView
             android:id="@+id/or"
-            android:layout_width="16dp"
+            android:layout_width="19dp"
             android:layout_height="23dp"
             android:layout_marginHorizontal="5dp"
             android:gravity="top"
             android:text="@string/or"
             android:textAppearance="@style/or"
+            android:fontFamily="@font/montserrat"
             android:textColor="@color/white" />
 
         <View
@@ -294,6 +300,7 @@
 
 
     </LinearLayout>
+
     <View
         android:id="@+id/rectangle_1"
         android:layout_width="312dp"
@@ -302,8 +309,8 @@
         android:layout_alignParentTop="true"
         android:background="@drawable/rectangle_1"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/btn"
-        app:layout_constraintStart_toStartOf="@+id/btn"
+        app:layout_constraintEnd_toEndOf="@+id/frame_10"
+        app:layout_constraintStart_toStartOf="@+id/frame_10"
         app:layout_constraintTop_toBottomOf="@+id/frame_10"></View>
 
     <TextView
@@ -315,6 +322,7 @@
         android:gravity="top"
         android:text="@string/continue_wi"
         android:textAppearance="@style/continue_wi"
+        android:fontFamily="@font/montserrat"
         app:layout_constraintBottom_toBottomOf="@+id/rectangle_1"
         app:layout_constraintEnd_toEndOf="@+id/rectangle_1"
         app:layout_constraintHorizontal_bias="0.81"
