@@ -18,4 +18,31 @@
         <item name="android:letterSpacing">0.05</item>
         <item name="android:textColor">#FFFFFF</item>
     </style>
+    <style name="forgot_pass">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+    <style name="don_t_have_">
+        <item name="android:textSize">14sp</item>
+        <item name="android:letterSpacing">0.05</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+    <style name="sign_up">
+        <item name="android:textSize">14sp</item>
+        <item name="android:letterSpacing">0.05</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+    <style name="continue_wi">
+        <item name="android:textSize">14sp</item>
+        <item name="android:letterSpacing">0.05</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize the status bar color -->
+        <item name="android:statusBarColor">@color/black</item>
+    </style>
+    <style name="or">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#B3FFFFFF</item>
+    </style>
 </resources>
