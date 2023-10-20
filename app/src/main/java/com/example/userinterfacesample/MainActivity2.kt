@@ -26,6 +26,7 @@ class MainActivity2 : AppCompatActivity() {
                     binding.signUp.setTextColor(Color.WHITE)
                     intent = Intent(this,MainActivity::class.java)
                     startActivity(intent)
+                    finish()
                 },100
             )
 
