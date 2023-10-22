@@ -6,8 +6,13 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
+import android.util.Log
+import android.widget.Toast
 import androidx.core.content.ContextCompat
 import com.example.userinterfacesample.databinding.ActivityMainBinding
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.launch
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
@@ -27,6 +32,28 @@ class MainActivity : AppCompatActivity() {
                     finish()
                 },100
             )
+
+        }
+        binding.btn.setOnClickListener {
+            GlobalScope.launch(Dispatchers.IO) {
+                try {
+                    val request = LoginRequest("eve.holt@reqres.in", "cityslicka")
+                    val response = RetrofitInstance.apiService.login(request)
+
+                    if (response.isSuccessful) {
+                        val loginResponse = response.body()
+                        if (loginResponse != null) {
+                            val token = loginResponse.token
+                            Log.d("Error", token.toString())
+                            runOnUiThread {
+                                Toast.makeText(this@MainActivity,token.toString(),Toast.LENGTH_SHORT).show()
+                            }
+                        }
+                    }
+                } catch (e: Exception) {
+                   // I Will do something if an error came
+                }
+            }
 
         }
     }

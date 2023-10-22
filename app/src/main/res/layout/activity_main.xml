@@ -90,7 +90,9 @@
 
         app:layout_constraintTop_toTopOf="parent"
         app:startIconDrawable="@drawable/baseline_mail_24"
-        app:startIconTint="@color/white">
+        app:startIconTint="@color/white"
+        app:endIconDrawable="@drawable/custom_password_toggle"
+        >
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/email"
@@ -99,6 +101,8 @@
             android:layout_height="match_parent"
             android:fontFamily="@font/montserrat"
             android:hint="Email"
+            android:imeOptions="actionNext"
+            android:maxLines="1"
             android:textColor="@color/white"
             android:textColorHint="@color/white" />
 
@@ -120,7 +124,8 @@
         app:passwordToggleEnabled="true"
         app:passwordToggleTint="@drawable/ic_password_toggle"
         app:startIconDrawable="@drawable/baseline_lock_24"
-        app:startIconTint="@color/white">
+        app:startIconTint="@color/white"
+        app:endIconDrawable="@drawable/custom_password_toggle">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/passkey"
@@ -261,7 +266,7 @@
         android:textAppearance="@style/continue_wi"
         app:layout_constraintBottom_toBottomOf="@+id/rectangle_1"
         app:layout_constraintEnd_toEndOf="@+id/rectangle_1"
-        app:layout_constraintHorizontal_bias="0.57"
+        app:layout_constraintHorizontal_bias="0.62"
         app:layout_constraintStart_toStartOf="@+id/rectangle_1"
         app:layout_constraintTop_toTopOf="@+id/rectangle_1" />
 
